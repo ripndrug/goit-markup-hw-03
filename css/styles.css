@@ -60,6 +60,10 @@ p {
   margin: 0 auto;
 }
 
+.header-section {
+  border-bottom: 1px solid var(--cornflower);
+}
+
 .header-section > .container {
   display: flex;
   align-items: center;
@@ -140,6 +144,8 @@ p {
 
 .hero {
   background: var(--navy-blue);
+
+  padding: 188px 0;
 }
 
 .hero-button {
@@ -151,7 +157,17 @@ p {
   letter-spacing: 0.04em;
   color: var(--white);
 
+  display: block;
+  min-width: 169px;
+  height: 56px;
+
+  margin: 0 auto;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border: none;
 }
 
 .hero-button:hover,
@@ -166,15 +182,26 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--white);
+
+  max-width: 496px;
+
+  margin: 0 auto 48px;
+}
+
+.visually-hidden {
+  display: none;
 }
 
 .goals-list {
   display: flex;
 }
 
+.goals-list-item {
+  width: calc((100% - 72px) / 4);
+}
+
 .goals-list-item:not(:last-child) {
   margin-right: 24px;
-  width: calc((100% - 72) / 4);
 }
 
 .goals-title {
@@ -206,15 +233,11 @@ p {
   background: var(--white);
 
   width: calc((100% - 72) / 4);
-  text-align: center;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item:not(:last-child) {
   margin-right: 24px;
-}
-
-.team-img {
-  margin-bottom: 32px;
 }
 
 .team-title {
@@ -229,6 +252,10 @@ p {
   margin-bottom: 72px;
 }
 
+.team-container {
+  padding: 32px 0;
+}
+
 .team-member {
   font-weight: 500;
   font-size: 20px;
@@ -237,6 +264,7 @@ p {
   color: var(--navy-blue);
 
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .team-text {
@@ -245,7 +273,14 @@ p {
   letter-spacing: 0.02em;
   color: var(--slate);
 
-  margin-bottom: 32px;
+  text-align: center;
+}
+
+.portfolio-container {
+  padding: 32px 16px;
+
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-list {
@@ -273,10 +308,6 @@ p {
   margin-bottom: 72px;
 }
 
-.portfolio-img {
-  margin-bottom: 32px;
-}
-
 .portfolio-title {
   font-weight: 500;
   font-size: 20px;
@@ -292,8 +323,10 @@ p {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--slate);
+}
 
-  margin-bottom: 32px;
+.footer-section {
+  padding: 100px 0;
 }
 
 .footer-section .logo-web {
@@ -305,8 +338,15 @@ p {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--cloud);
+
+  max-width: 264px;
 }
 
 .footer-section {
   background: var(--navy-blue);
+}
+
+.footer-section .logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
